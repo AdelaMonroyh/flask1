@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify, render_template
 import joblib
+from flask import Flask, request, jsonify, render_template
+
 
 
 app = Flask(__name__)
@@ -20,5 +21,5 @@ def formulario():
     return render_template('formulario.html', resultado=resultado)
 
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
